@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    
+</head>
+<body>
+    <!-- scorebox wala section -->
+    <div class="scorebox">
+        <div class="scoreleft">
+            <h2 class="gametitle">Rock</h2>
+            <h2 class="gametitle">Paper</h2>
+            <h2 class="gametitle">Scissors</h2>
+        </div>
+        <div class="scoreright">
+            <div class="score">
+                <p><b>YOUR</b></p>
+                <p><b>SCORE</b></p>
+                <span id="playerscore">0</span>
+            </div>
+        </div>
+    </div>
+    <!-- game choice selection box -->
+    <div class="game">
+        <div id="game">
+            <h2 style="color: #fff;">SELECT YOUR CHOICE</h2>
+            <div id="rock">
+                <div id="rockcle" class="circle" onclick="Game('rock')"><img class="image" src="icons8-fist-67 1.png" alt=""></div>
+            </div>
+            <div id="paper">
+                <div id="papercle" class="circle" onclick="Game('paper')"><img class="image" src="icons8-hand-64 1.png" alt=""></div>
+            </div>
+            <div id="scissors">
+                <div id="scissorscle" class="circle" onclick="Game('scissors')"><img class="image" src="17911 1.png" alt=""></div>
+            </div>
+            <div class="line" id="linerp"></div>
+            <div class="line" id="lineps"></div>
+            <div class="line" id="liners"></div>
+        </div>
+    </div>
+    <!-- game result box -->
+    <div class="game">
+        <div id="result">
+            <div id="container">
+                <div class="flexitem" id="leftctnr">
+                    <h3 class="yp">YOU</h3>
+                    <h3 class="yp">PICKED</h3>
+                    <div class="picked" id="plyerpick"></div>
+                </div>
+                <div class="flexitem" id="midctnr">
+                    <h2 class="yp" id="restext">RESULT</h2>
+                    <h3 class="yp">AGAINST PC</h3>
+                    <button id="rematch" onclick="playAgain()">PLAY AGAIN</button>
+                </div>
+                <div class="flexitem" id="rightctnr">
+                    <h3 class="yp">COMPUTER</h3>
+                    <h3 class="yp">PICKED</h3>
+                    <div class="picked" id="comppick"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- rules box -->
+    <div id="rules">Rules</div>
+    <div id="rulepopup">
+        <div id="close" onclick="closePopup()">X</div>
+        <h2>Rules</h2>
+        <p>Rock beats scissors, scissors beat paper, and paper beats rock.</p>
+        <p>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</p>
+        <p>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</p>
+        <p>If both players lay down the same hand, each player lays down another hand</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
