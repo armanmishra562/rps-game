@@ -1,0 +1,223 @@
+body{
+    background-color: #050529;
+    text-align: center;
+}
+button{
+    height: fit-content;
+    width: auto;
+    background-color: #050529;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 5%;
+}
+
+/* SCOREBOX STYLES */
+.gametitle{
+    color: white;
+    font-size: 2em;
+}
+.scorebox{
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    width: 70%;
+    height: 30%;
+    border: 5px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.scoreleft{
+    text-align: left;
+    margin-left: 50px;
+}
+.scoreright{
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+}
+.score{
+    
+    background-color: white;
+    width: 90px;
+    margin:10px;
+    padding: 20px;
+    border-radius: 5%;
+}
+#playerscore{
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+
+
+/* GAME CHOICE STYLES */
+.game{
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    width: 70%;
+    height: fit-content;
+}
+#game{
+    display: block;
+}
+.circle{
+    background-color: #FFFFFF;
+    height: 80px;
+    width: 80px;
+    border: 5px solid ;
+    border-radius: 100%;
+    border-width: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle:hover{
+    cursor: pointer;
+    /* transform: scale(1.5,0); */
+    box-shadow: 0 0 50px rgb(55, 235, 255, 1);
+}
+.circle img{
+    max-height: 80%;
+    max-width: 80%;
+}
+#rock{
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    transform: translateX(-30%);
+}
+#rockcle{
+    border-color: #0074B6;
+}
+#scissors{
+    position: absolute;
+    top: 100%;
+    right: 25%;
+    transform: translateX(-25%);
+}
+#scissorscle{
+    border-color: #BD00FF;
+}
+#paper{
+    position: absolute;
+    top: 300%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#papercle{
+    border-color: #FFA943;
+}
+.line{
+    height: 15px;
+    width: 300px;
+    background-color: rgb(85, 82, 82);
+    z-index: -1;
+}
+#liners{
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#linerp{
+    position: absolute;
+    top: 280%;
+    left: 38%;
+    width: 200px;
+    transform: translateX(-38%) rotate(45deg);
+}
+#lineps{
+    position: absolute;
+    top: 280%;
+    right: 25%;
+    width: 200px;
+    transform: translateX(-25%) rotate(130deg);
+}
+/* GAME RESULT SECTION STYLES*/
+#result{
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10%);
+    width: 70%;
+    height: fit-content;
+    
+}
+#container{
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    
+}
+.flexitem{
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+    width: 100px;
+}
+.picked{
+    background-color: #FFFFFF;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.picked img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.yp{
+    font-weight: 600;
+}
+
+  
+/* RULES SECTION STYLES */
+#rules{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.5em;
+    border: 2px solid #FFFFFF;
+    border-radius: 5%;
+}
+#rulepopup {
+    display: none;
+    position: fixed;
+    bottom: 4%;
+    right: 4%;
+    transform: translate(-4%, -4%);
+    background-color: #213e21;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 5%;
+    color: #fff;
+}
+#close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    height:20px;
+    width:20px;
+    background-color:red;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+
+
